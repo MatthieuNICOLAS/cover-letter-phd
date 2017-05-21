@@ -1,0 +1,131 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                              % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}          % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.83]{geometry}
+\usepackage{ragged2e}
+
+\definecolor{href}{HTML}{428BCA}
+\newcommand{\customboldlink}[1]{\color{href} #1}
+\newcommand{\tab}{\quad \quad}
+
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Matthieu}{Nicolas}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{30 Avenue Saint-Sébastien}{54600 Villers-lès-Nancy}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{06 75 98 34 40}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{matthieu.nicolas@inria.fr}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Equipe COAST}{Centre Inria Nancy\\615 rue du Jardin Botanique\\54600 Villers-lès-Nancy}
+\date{À Nancy, le 21 mai 2017}
+\opening{
+  \textbf{Objet :} candidature à l'offre de thèse portant sur la "(Ré)Identification efficace dans les types de données\\
+  \hspace{13mm}    répliquées sans conflit (CRDTs)"
+}
+\closing{Cordialement,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+Monsieur Oster, Monsieur Perrin
+
+\justify
+\tab Mon contrat d'ingénieur recherche et développement dans le cadre du projet TVPaint arrivant à terme,
+je suis actuellement à la recherche d'un nouvel emploi.
+Souhaitant dorénavant m'orienter vers le domaine de la recherche et de l'enseignement,
+je me permets de vous adresser ma candidature à votre offre de thèse.
+
+%
+%   Vous
+%   - Reparler du projet
+%   - Parler de pourquoi je souhaite rester dans l'équipe
+%       - Bonne ambiance
+%       - Stimulant intellectuellement
+%   - LORIA cadre de travail intéressant
+%
+\tab Ayant intégré l'équipe COAST depuis mon stage de fin d'études,
+j'ai pu découvrir et me familiariser au fil des mois avec l'environnement de travail qu'est le LORIA.
+Les sujets de recherche variés, les nombreuses conférences scientifiques organisées
+et la diversité des cultures présentes sont autant de raisons
+qui font de ce milieu un cadre intéressant et stimulant dans lequel je souhaite continuer d'évoluer.
+
+%
+%   Je - Nous
+%   - 3 ans dans l'équipe COAST qui travaille sur la réplication de données
+%   - Autonome et capable de s'adapter pour remplir l'ensemble varié des tâches
+%   - Compétences dans le domaine des mécanismes de réplication de données
+%   - Pu découvrir le monde de la recherche et y a pris goût
+%
+\tab Comme indiqué précédemment, j'ai rejoint l'équipe COAST au cours de mon stage de fin d'études.
+Ce dernier portait sur la réalisation d'un prototype d'éditeur collaboratif temps réel,
+\href{https://www.coedit.re}{\customboldlink MUTE}.
+Cet éditeur collaboratif implémente \emph{LogootSplit},
+un algorithme issu des travaux de l'équipe appartenant à la famille des type de données répliquées sans conflit.
+Cette expérience m'a donc permis de découvrir
+et de me familiariser avec cette nouvelle approche
+de réplication des données et de maintien de la cohérence à terme.
+
+
+% TODO: Insérer un paragraphe sur la poursuite des travaux autour du MUTE dans le cadre de OpenPaas::NG
+%\tab Par la suite, ...
+
+\tab Finalement, j'ai pu au cours de ces trois dernières années
+échanger au quotidien avec les différents membres de l'équipe COAST.
+Ceci m'a permis de suivre l'évolution de leurs travaux
+et de parfaire mes connaissances sur les thématiques de recherche de l'équipe.
+Ces échanges m'ont aussi appris ce qu'est le métier de doctorant.
+
+% TODO: Voir comment tourner la conclusion
+%Je souhaite maintenant mettre en oeuvre ces connaissances et compétences pour...
+
+\tab Je reste à votre entière disposition pour un éventuel entretien. Dans l'attente de votre réponse, veuillez agréer, Messieurs, mes salutations distinguées.
+
+%\makeletterclosing
+
+Cordialement,\\
+\begin{flushright}
+\textbf{Matthieu Nicolas}
+\end{flushright}
+
+\end{document}
+%% end of file `template.tex'.

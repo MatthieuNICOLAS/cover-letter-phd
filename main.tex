@@ -121,10 +121,27 @@ de réplication des données et de maintien de la cohérence à terme.
 %     - A regardé d'autres CRDTs pour en utiliser un plus adapté pour la gestion des titres de documents
 %   - Développement et mise en place d'un système d'anti-entropie
 
-%\tab Par la suite, ...
+\tab Par la suite, j'ai continué à travailler sur les CRDTs dans le cadre du projet OpenPaas::NG.
+Ce projet a pour objectif la réalisation d'une suite open-source
+d'applications collaboratives de bureautique.
+Le but est ainsi de proposer aux entreprises
+une alternative viable et libre à des solutions telles que Google Apps.
+L'équipe COAST intervient dans ce projet pour apporter entre autres
+son expertise dans les mécanismes de réplication de données.
+Ainsi, dans le cadre de ce projet, j'ai tout d'abord poursuivi mes travaux
+sur l'implémentation de \emph{LogootSplit} en corrigeant les différents bugs détectés.
+Je me suis ensuite documenté sur les différentes
+structures de données répliquées sans conflit existantes.
+Ceci m'a permis de choisir la structure la plus adaptée
+en fonction du type de donnée à répliquer et du cas d'utilisation.
+Finalement j'ai développé un système d'anti-entropie qui, comme son nom l'indique,
+permet de faciliter la convergence de deux répliques~:
+en détectant leurs différences, nous sommes capables d'identifier les données
+manquantes d'une copie par rapport à l'autre et d'échanger ces dernières de nouveau.
+Ces différents travaux ont été intégrés dans MUTE afin
+de pouvoir être validés et présentés aux partenaires du projet.
 
 % TODO: Expliquer que ce sont ces activités de recherche qui m'ont le plus intéressé
-% -    -
 
 
 % TODO: Retravailler le paragraphe suivant pour insérer ces idées
@@ -134,9 +151,9 @@ de réplication des données et de maintien de la cohérence à terme.
 \tab Finalement, j'ai pu au cours de ces trois dernières années
 échanger au quotidien avec les différents membres de l'équipe COAST.
 Ceci m'a permis de suivre l'évolution de leurs travaux
-et d'apprendre ce qu'est le métier de doctorant, ses tâches
-mais aussi ses difficultés.
-C'est donc en connaissance de cause que je candidate pour cette thèse.
+mais aussi d'apprendre ce qu'est le métier de doctorant,
+ses tâches ainsi que ses difficultés.
+C'est donc en connaissance de cause que je candidate à cette offre de thèse.
 
 % TODO: Voir comment tourner la conclusion
 %Je souhaite maintenant mettre en oeuvre ces connaissances et compétences pour...
